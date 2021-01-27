@@ -1,0 +1,65 @@
+.main {
+  height: 2360px;
+  width: 1355px;
+  margin: 0 auto;
+}
+.black {
+  height: 30px;
+  width: 100%;
+  background-color: #000;
+}
+.left {
+  width: 280px;
+  height: 2340px;
+  padding-right: 60px;
+  padding-top: 20px;
+  float: left;
+  /* background-color: yellow; */
+}
+.right {
+  width: 1015px;
+  height: 2360px;
+  background-color: green;
+  float: left;
+}
+.left p {
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.left h3 {
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+}
+.left h2 {
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.left p span {
+  float: left;
+}
+.left p i {
+  float: right;
+}
+.left ul {
+  overflow: hidden;
+  display: none;
+}
+.left ul li {
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  padding: 3px 5px;
+  border: 1px solid rgb(190, 173, 173);
+  margin: 5px 8px 8px 0;
+}
+.right option {
+  width: 240px;
+  height: 40px;
+}

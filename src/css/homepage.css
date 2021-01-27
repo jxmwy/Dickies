@@ -6,6 +6,11 @@
   overflow: hidden;
   position: relative;
 }
+.black {
+  height: 30px;
+  width: 100%;
+  background-color: #000;
+}
 .imgWrap {
   width: 1000000px;
 }
