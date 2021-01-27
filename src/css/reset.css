@@ -1,0 +1,74 @@
+/* {margin: 0; padding: 0;} */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+input,
+img,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a,
+u,
+ins {
+  text-decoration: none;
+}
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+.r {
+  float: right;
+}
+.l {
+  float: left;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+}
+iframe {
+  display: block;
+  width: 100%;
+}
+.if-top {
+  height: 104px;
+}
+.if-bottom {
+  height: 138px;
+}

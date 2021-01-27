@@ -1,0 +1,104 @@
+.main {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 30px;
+  /* background-color: pink; */
+}
+.main p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.main div {
+  padding-top: 25px;
+  height: 42px;
+  position: relative;
+}
+.main input {
+  height: 42px;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #000;
+}
+.phoneNum {
+  width: 100%;
+}
+.password {
+  width: 100%;
+}
+.confirmCode {
+  width: 100%;
+}
+.picCode {
+  width: 300px;
+  float: left;
+}
+.mesCode {
+  width: 300px;
+  float: left;
+}
+.getCode {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 36px;
+  float: right;
+  width: 200px;
+  background-color: #010101;
+}
+.main .check {
+  float: left;
+}
+.main span {
+  float: left;
+  font-size: 14px;
+  margin-left: 30px;
+  line-height: 42px;
+}
+.main button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+  border: none;
+  height: 42px;
+}
+.reg {
+  width: 100%;
+  background-color: rgb(163, 12, 12);
+}
+.main div .random {
+  height: 42px;
+  width: 100px;
+  float: left;
+  font-size: 30px;
+  text-align: center;
+  color: blue;
+  line-height: 42px;
+  cursor: pointer;
+}
+.main div .notsee {
+  height: 42px;
+  width: 100px;
+  float: left;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.main i {
+  height: 15px;
+  font-size: 12px;
+  background-color: rgb(212, 228, 228);
+  line-height: 15px;
+  color: red;
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  display: none;
+}
+.main .weizhi {
+  right: 201px;
+}

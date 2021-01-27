@@ -1,0 +1,138 @@
+.main {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+.main .user {
+  height: 100px;
+}
+.user p {
+  font-size: 20px;
+  color: #99a6c4;
+  margin: 60px 50px 0px 70px;
+  padding-bottom: 8px;
+  float: left;
+}
+.user .select {
+  color: #cb0025;
+  font-weight: bold;
+  border-bottom: 2px solid #cb0025;
+}
+
+.main div {
+  padding-top: 25px;
+  height: 42px;
+}
+.main input {
+  height: 42px;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #000;
+}
+.phoneNum {
+  width: 100%;
+}
+.picCode {
+  width: 300px;
+  float: left;
+}
+.mesCode {
+  width: 300px;
+  float: left;
+}
+.main button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+  height: 42px;
+}
+.getCode {
+  float: right;
+  width: 200px;
+  background-color: #010101;
+}
+.login {
+  background-color: #c51333;
+  width: 50%;
+  float: left;
+}
+.register {
+  background-color: #010101;
+  width: 50%;
+  float: right;
+}
+.bottom p {
+  line-height: 42px;
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  margin-top: 25px;
+}
+.bottom span {
+  margin-top: 25px;
+  cursor: pointer;
+  margin-left: 5px;
+  height: 32px;
+  width: 32px;
+  /* background-color: #c51333; */
+  float: left;
+  background-size: 32px;
+}
+.img1 {
+  background-image: url(../img/登录/weibo.png);
+}
+.img1:hover {
+  background-image: url(../img/登录/weibo2.png);
+}
+.img2 {
+  background-image: url(../img/登录/qq.png);
+}
+.img2:hover {
+  background-image: url(../img/登录/qq2.png);
+}
+.img3 {
+  background-image: url(../img/登录/weixin.png);
+}
+.img3:hover {
+  background-image: url(../img/登录/weixin2.png);
+}
+.fade {
+  display: none;
+}
+.password {
+  width: 100%;
+}
+.writeCode {
+  width: 100%;
+}
+.forget {
+  width: 100%;
+  line-height: 30px;
+  text-align: right;
+  height: 30px;
+  color: blue;
+}
+.main div .random {
+  height: 42px;
+  width: 100px;
+  float: left;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 42px;
+  cursor: pointer;
+  color: blue;
+}
+.main div .notsee {
+  height: 42px;
+  width: 100px;
+  float: left;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
