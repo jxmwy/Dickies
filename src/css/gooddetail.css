@@ -1,0 +1,170 @@
+.black {
+  height: 30px;
+  width: 100%;
+  background-color: #000;
+}
+.main {
+  height: 800px;
+  width: 1000px;
+  padding-top: 40px;
+  /* background-color: pink; */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main .left {
+  width: 400px;
+  height: 1000px;
+  float: left;
+  position: relative;
+}
+.main .right {
+  width: 560px;
+  height: 800px;
+  float: left;
+  padding-left: 40px;
+  /* background-color: aqua; */
+}
+.big {
+  width: 400px;
+  height: 520px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.big img {
+  width: 100%;
+  height: 100%;
+}
+.pic li {
+  float: left;
+  height: 100px;
+  width: 80px;
+  margin-left: 20px;
+  border: 2px solid #fff;
+}
+.pic li img {
+  width: 80px;
+  height: 100px;
+  cursor: pointer;
+}
+.plus {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 410px;
+  top: 0px;
+  overflow: hidden;
+  display: none;
+}
+.plus img {
+  height: 1040px;
+  width: 800px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.big p {
+  height: 150px;
+  width: 150px;
+  background: rgb(8, 8, 8);
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  opacity: 0.7;
+  cursor: pointer;
+  /* display: none; */
+}
+.right ul li {
+  margin-bottom: 15px;
+}
+.right .name {
+  font-size: 16px;
+}
+.right .goodid {
+  font-size: 14px;
+}
+.right .price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.right .day7 {
+  height: 40px;
+  width: 300px;
+  padding: 0 130px;
+  background-color: #f2f2f2;
+}
+.right p {
+  margin-top: 26px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.style {
+  overflow: hidden;
+}
+.style img {
+  width: 60px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.size {
+  overflow: hidden;
+}
+.size span {
+  height: 45px;
+  width: 45px;
+  float: left;
+  margin-right: 15px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid rgb(187, 172, 172);
+  cursor: pointer;
+}
+.number {
+  overflow: hidden;
+}
+.number span {
+  height: 45px;
+  width: 30px;
+  background-color: #010101;
+  line-height: 45px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+.number i {
+  height: 43px;
+  width: 45px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 43px;
+  float: left;
+  display: block;
+  border: 1px solid #010101;
+}
+.select {
+  width: 560px;
+  height: 45px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.select p {
+  width: 280px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  float: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+.add {
+  background-color: #000;
+}
+.buy {
+  background-color: #c51333;
+}

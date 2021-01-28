@@ -1,0 +1,292 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: #00397e;
+}
+body {
+  font-family: "微软雅黑";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  /* -webkit-appearance: none; */
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+  outline: none;
+}
+.cartList {
+  height: 820px;
+  width: 100%;
+}
+.cartList h1 {
+  height: 118px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 28px;
+  text-align: center;
+  line-height: 118px;
+}
+
+.cartList .list {
+  width: 100%;
+  background-color: #efefef;
+}
+.cartList nav {
+  height: 50px;
+  width: 1355px;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+.cartList nav > div {
+  box-sizing: border-box;
+  width: 106px;
+  height: 50px;
+  float: left;
+}
+.cartList nav > div > span {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.cartList nav input {
+  margin: 15px 2px 12px 20px;
+}
+.cartList nav > p span {
+  display: inline-block;
+  line-height: 50px;
+}
+.cartList nav > p span:nth-child(1) {
+  width: 580px;
+  height: 50px;
+}
+.cartList nav > p span:nth-child(2) {
+  width: 90px;
+  height: 50px;
+  text-align: center;
+}
+.cartList nav > p span:nth-child(3) {
+  width: 110px;
+  height: 50px;
+  text-align: center;
+  margin: 0px 80px;
+}
+.cartList nav > p span:nth-child(4) {
+  width: 76px;
+  height: 50px;
+  text-align: center;
+}
+.cartList nav > p span:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0px 40px;
+}
+.cartList nav > p span:nth-child(6) {
+  width: 70px;
+  height: 50px;
+  text-align: center;
+}
+.cartList main {
+  height: 656px;
+  width: 1355px;
+  margin: 0 auto;
+}
+.cartList main .one {
+  height: 160px;
+}
+.cartList main .one > input {
+  float: left;
+  margin: 65px 65px 70px 20px;
+}
+.cartList main .one dl {
+  float: left;
+  margin-top: 30px;
+}
+
+.cartList main .one dt {
+  width: 100px;
+  height: 128px;
+  border: 1px solid black;
+  float: left;
+  margin-right: 11px;
+}
+.cartList main .one dt > img {
+  width: 100%;
+  height: 100%;
+}
+.cartList main .one dd {
+  float: left;
+  margin-right: 190px;
+}
+.cartList main .one dd > span {
+  font-weight: bold;
+}
+.cartList main .one p {
+  width: 90px;
+  float: left;
+  text-align: center;
+  margin-top: 36px;
+  margin-right: 88px;
+  color: #00397e;
+  font-size: 12px;
+}
+.cartList main .one > div {
+  float: left;
+  width: 110px;
+  height: 42px;
+  border: 1px solid black;
+  margin-top: 36px;
+  margin-right: 83px;
+}
+.cartList main .one > div > button {
+  width: 32px;
+  height: 43px;
+  background-color: #000000;
+  outline: none;
+  border: none;
+  color: white;
+}
+.cartList main .one .blef {
+  float: left;
+}
+.cartList main .one .brig {
+  float: right;
+}
+.cartList main .one > div > input {
+  width: 46px;
+  height: 42px;
+  outline: none;
+  border: none;
+  float: left;
+  text-align: center;
+  line-height: 42px;
+}
+
+.cartList main .one > span {
+  float: left;
+  width: 76px;
+  margin-top: 34px;
+  font-weight: bold;
+}
+.cartList main .one .sone {
+  width: 55px;
+  margin: 34px 40px;
+}
+.cartList main .one .stwo {
+  color: red;
+}
+.cartList .mid {
+  width: 100%;
+  background-color: #efefef;
+}
+
+.cartList > .mid > p {
+  height: 50px;
+  width: 1355px;
+  margin: 0 auto;
+  background-color: #efefef;
+  line-height: 50px;
+  font-weight: bold;
+}
+.cartList .zp {
+  height: 64px;
+  width: 1355px;
+  margin: 0 auto;
+  line-height: 64px;
+}
+.cartList .zp > span {
+  display: block;
+  background-color: #c51333;
+  height: 20px;
+  width: 36px;
+  color: white;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 22px;
+  font-size: 12px;
+}
+.cartList .zp > p {
+  float: left;
+  margin-left: 5px;
+}
+.cartList .main {
+  width: 100%;
+  background-color: #efefef;
+}
+.cartList .pay {
+  height: 310px;
+  width: 1355px;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+.cartList .pay .payup {
+  height: 90px;
+  border-bottom: 2px solid #b7b7b7;
+}
+.cartList .pay .payup > div {
+  width: 200px;
+  /* height: 70px; */
+  margin-top: 30px;
+  float: right;
+}
+.cartList .pay .payup > div span {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.cartList .pay .paydow {
+  height: 220px;
+}
+.cartList .pay .paydow > div {
+  width: 250px;
+  height: 120px;
+  float: right;
+}
+.cartList .pay .paydow > div > p {
+  text-align: center;
+  line-height: 40px;
+}
+.cartList .pay .paydow > div > p > span {
+  font-weight: bold;
+  color: red;
+  margin-left: 30px;
+}
+.cartList .pay .paydow > div > a {
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+}
+.cartList .pay .paydow > div > button {
+  width: 120px;
+  height: 42px;
+  background: #c51333;
+  outline: none;
+  border: none;
+  color: white;
+  text-align: center;
+  line-height: 42px;
+  margin-top: 40px;
+  margin-left: 20px;
+}

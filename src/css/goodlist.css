@@ -19,7 +19,7 @@
 .right {
   width: 1015px;
   height: 2360px;
-  background-color: green;
+  /* background-color: pink; */
   float: left;
 }
 .left p {
@@ -59,7 +59,114 @@
   border: 1px solid rgb(190, 173, 173);
   margin: 5px 8px 8px 0;
 }
-.right option {
-  width: 240px;
-  height: 40px;
+.right .option {
+  width: 220px;
+  height: 20px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #000;
+  position: relative;
+  cursor: pointer;
+  margin-top: 60px;
+  z-index: 22;
+}
+.right .option ul {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  border: 1px solid #000;
+  display: none;
+}
+.right .option li {
+  width: 220px;
+  height: 20px;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.right .option li:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.right .content {
+  height: 520px;
+  width: 325px;
+  /* background-color: aqua; */
+  margin-right: 12px;
+  margin-top: 5px;
+  float: left;
+  cursor: pointer;
+}
+.content .bigPic {
+  width: 321px;
+  height: 396px;
+  border: 1px solid #fff;
+  position: relative;
+}
+.bigPic:hover {
+  border: 1px solid #000;
+}
+.bigPic img {
+  height: 396px;
+  width: 321px;
+}
+.bigPic img:hover {
+  transform: scale(0.98);
+}
+.content h3 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.content p {
+  height: 25px;
+  width: 100%;
+}
+.content p i {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+}
+.content .price {
+  float: right;
+  font-size: 20px;
+  line-height: 25px;
+}
+.smallPic {
+  margin: 0 auto;
+  width: 220px;
+  display: none;
+}
+.smallPic li {
+  margin-top: 5px;
+  height: 50px;
+  width: 40px;
+  margin-left: 5px;
+  float: left;
+  border: 1px solid #fff;
+}
+.smallPic li img {
+  height: 50px;
+  width: 40px;
+}
+.smallPic img:hover {
+  transform: scale(0.96);
+  border: 1px solid #000;
+}
+.bigPic span {
+  height: 50px;
+  width: 321px;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #00397e;
+  display: none;
 }
