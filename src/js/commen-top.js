@@ -2,21 +2,20 @@
 let top1 = $(".top-1")[0]
 let top2img = $(".pic ")[0]
 //鼠标滑动事件
-$(document).on('mousewheel DOMMouseScroll', onMouseScroll);
-function onMouseScroll(e) {
-    e.preventDefault();
-    var wheel = e.originalEvent.wheelDelta || -e.originalEvent.detail;
-    var delta = Math.max(-1, Math.min(1, wheel));
-    if (delta < 0) {//向下滚动
-        // console.log(delta)
-        top2img.style.width = "70px"
-        top1.id = "fade"
-    } else {//向上滚动
-        // console.log(delta)
-        top1.id = ""
-        top2img.style.width = "170px"
+$(window).scroll(function (){
+    var wintop=$(window).scrollTop(); // 已滚动卷去的高度
+    // 当滚动条离顶部60像素时的条件判断和执行动作
+    // console.log(wintop)
+    if (wintop > 60) {
+        $(".pic").css("width", "70px")
+        $(".top-1").css("display", "none")
+        $(".top-2").css("position","fixed")
+    } else {
+        $(".pic").css("width", "170px")
+        $(".top-1").css("display", "block")
+        $(".top-2").css("position","")
     }
-}
+})
 // 二级菜单
 $(".manli").mouseenter(function () {
     $(".man").slideDown()
