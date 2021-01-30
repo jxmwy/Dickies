@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>购物车</title>
 	<link rel="stylesheet" type="text/css" href="css/cart.css" />
+	<link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
 		<div class="list">
 			<nav>
 				<div>
-					<input type="checkbox" name="" id="" value="" />
+					<input type="checkbox" name="" class="checkAll" value="" />
 					<span>全选</span>
 				</div>
 				<p>
@@ -30,17 +31,17 @@
 
 		<main>
 			<div class="one">
-				<input type="checkbox" name="" id="" value="" />
+				<input type="checkbox" name="" class="check" value="" />
 				<dl>
 					<dt><img src="img/img5.png"></dt>
 					<dd>
-						Dickies女式logo印花卫衣<br>
+						<i class="goodname">Dickies女式logo印花卫衣</i><br><br>
 						<span>DK008813B2910XS000&nbsp;深藏青色&nbsp;XS</span>
 					</dd>
 				</dl>
 				<p>
-					<a href="#">已收藏</a>|
-					<a href="#">移除</a>
+					<a href="#">未收藏</a>|
+					<a href="#" class="delete">移除</a>
 				</p>
 				<div>
 					<button class="blef">-</button>
@@ -48,22 +49,22 @@
 					<button class="brig">+</button>
 				</div>
 
-				<span>￥493.00</span>
+				<span>￥<i class="price">493</i>.00</span>
 				<span class="sone">￥0.00</span>
-				<span class="stwo">￥493.00</span>
+				<span class="stwo">￥<i class="subprice">493</i>.00</span>
 			</div>
 			<div class="one">
-				<input type="checkbox" name="" id="" value="" />
+				<input type="checkbox" name="" class="check" value="" />
 				<dl>
 					<dt><img src="img/img5.png"></dt>
 					<dd>
-						Dickies女式logo印花卫衣<br>
+						<i class="goodname">Dickies女式logo印花卫衣</i><br><br>
 						<span>DK008813B2910XS000&nbsp;深藏青色&nbsp;XS</span>
 					</dd>
 				</dl>
 				<p>
-					<a href="#">已收藏</a>|
-					<a href="#">移除</a>
+					<a href="#">未收藏</a>|
+					<a href="#" class="delete">移除</a>
 				</p>
 				<div>
 					<button class="blef">-</button>
@@ -71,22 +72,22 @@
 					<button class="brig">+</button>
 				</div>
 
-				<span>￥493.00</span>
+				<span>￥<i class="price">493</i>.00</span>
 				<span class="sone">￥0.00</span>
-				<span class="stwo">￥493.00</span>
+				<span class="stwo">￥<i class="subprice">493</i>.00</span>
 			</div>
 			<div class="one">
-				<input type="checkbox" name="" id="" value="" />
+				<input type="checkbox" name="" class="check" value="" />
 				<dl>
 					<dt><img src="img/img5.png"></dt>
 					<dd>
-						Dickies女式logo印花卫衣<br>
+						<i class="goodname">Dickies女式logo印花卫衣</i><br><br>
 						<span>DK008813B2910XS000&nbsp;深藏青色&nbsp;XS</span>
 					</dd>
 				</dl>
 				<p>
-					<a href="#">已收藏</a>|
-					<a href="#">移除</a>
+					<a href="#">未收藏</a>|
+					<a href="#" class="delete">移除</a>
 				</p>
 				<div>
 					<button class="blef">-</button>
@@ -94,63 +95,34 @@
 					<button class="brig">+</button>
 				</div>
 
-				<span>￥493.00</span>
+				<span>￥<i class="price">493</i>.00</span>
 				<span class="sone">￥0.00</span>
-				<span class="stwo">￥493.00</span>
+				<span class="stwo">￥<i class="subprice">493</i>.00</span>
 			</div>
-			<div class="one">
-				<input type="checkbox" name="" id="" value="" />
-				<dl>
-					<dt><img src="img/img5.png"></dt>
-					<dd>
-						Dickies女式logo印花卫衣<br>
-						<span>DK008813B2910XS000&nbsp;深藏青色&nbsp;XS</span>
-					</dd>
-				</dl>
-				<p>
-					<a href="#">已收藏</a>|
-					<a href="#">移除</a>
-				</p>
-				<div>
-					<button class="blef">-</button>
-					<input type="text" value="1">
-					<button class="brig">+</button>
-				</div>
 
-				<span>￥493.00</span>
-				<span class="sone">￥0.00</span>
-				<span class="stwo">￥493.00</span>
-			</div>
-		</main>
-		<div class="mid">
-			<p>赠品显示</p>
-		</div>
-		<div class="zp">
-			<span>赠品</span>
-			<p>工装卡到静安寺当就是当年DKLAL</p>
-		</div>
-		<div class="main">
 
-			<div class="pay">
-				<div class="payup">
-					<div>
-						<p>商品金额<span>￥882.00</span></p>
-						<p>优惠金额<span>￥0.00</span></p>
+			<div class="main">
+
+				<div class="pay">
+					<div class="payup">
+						<div>
+							<p>商品总数<span class="count">0</span></p>
+							<p>优惠金额<span>￥0.00</span></p>
+						</div>
+
 					</div>
-
-				</div>
-				<div class="paydow">
-					<div>
-						<p>总金额<span>￥882.00</span></p>
-						<a href="goodlist.html">&lt;&lt;继续购物</a>
-						<button>立即结算</button>
+					<div class="paydow">
+						<div>
+							<p>总金额<span>￥<i class="totalprice">0</i>.00</span></p>
+							<a href="">&lt;&lt;继续购物</a>
+							<button>立即结算</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 </body>
 
 </html>
 <script src="js/jquery.min.js"></script>
-<script src="crat.js"></script>
+<script src="js/crat.js"></script>

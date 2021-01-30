@@ -1,12 +1,12 @@
 
 let reg = location.href;
-let id=reg.split("=")[1]
+let id = reg.split("=")[1]
 // console.log(id)
 //后端接口
-$.get("./php/getGoodsInfo.php","goodsId="+id ,function (data) {
+$.get("./php/getGoodsInfo.php", "goodsId=" + id, function (data) {
 
-let arr = JSON.parse(data);
-    console.log(arr) 
+    let arr = JSON.parse(data);
+    console.log(arr)
     let content = $(
         `
         <div class="big">
@@ -25,7 +25,7 @@ let arr = JSON.parse(data);
         `
     )
     content.appendTo($(".left"))
- 
+
     let style = $(
         `
         <img src="${arr.goodsImg}" alt="">
@@ -46,11 +46,11 @@ let arr = JSON.parse(data);
     rul.appendTo($(".right ul"))
 
     // 让src找不到的图片影藏
-    let imgList = $(".main img")   
-    for (let i = 0; i < imgList.length; i++){
+    let imgList = $(".main img")
+    for (let i = 0; i < imgList.length; i++) {
         // console.log(imgList[i].getAttribute("src")==="")
-        if (imgList[i].getAttribute("src")==="") {
-            imgList[i].id="fade"
+        if (imgList[i].getAttribute("src") === "") {
+            imgList[i].id = "fade"
         }
     }
 
@@ -74,27 +74,27 @@ let arr = JSON.parse(data);
         $(".plus").hide()
     })
     // 鼠标滑上
-    $(".big img").mousemove(function (event) {
+    $(".big").mousemove(function (event) {
         var x = event.offsetX;
         var y = event.offsetY;
         // console.log(x,y)
         // 判断阴影部分是否出去边界值
-        if(y<=75){
-            y=75
+        if (y <= 75) {
+            y = 75
         }
-        if(y>=445){
-            y=445
+        if (y >= 445) {
+            y = 445
         }
-        if(x<=75){
-            x=75;
+        if (x <= 75) {
+            x = 75;
         }
-        if(x>=325){
-            x=325
+        if (x >= 325) {
+            x = 325
         }
         // 移动阴影位置
-        
-        $(".big p").css("top", y-75+ "px")
-        $(".big p").css("left", x-75+ "px")
+
+        $(".big p").css("top", y - 75 + "px")
+        $(".big p").css("left", x - 75 + "px")
 
         // 移动放大图片的相应位置
         var x1 = (-x + 75) * 2 + "px";
@@ -103,11 +103,8 @@ let arr = JSON.parse(data);
         $(".plus img").css("left", x1)
 
     })
-
-
-
 });
-    
+
 
 
 
@@ -117,18 +114,18 @@ let arr = JSON.parse(data);
 
 // 商品数量加减
 $(".jia").click(function () {
-    $(".number i").html(Number($(".number i").html())+1)
+    $(".number i").html(Number($(".number i").html()) + 1)
 })
 $(".jian").click(function () {
-    if (Number($(".number i").html())===1) {
+    if (Number($(".number i").html()) === 1) {
         return
     }
-    $(".number i").html($(".number i").html()-1)
+    $(".number i").html($(".number i").html() - 1)
 })
 // 商品尺码
 $(".size span").click(function () {
-    $(".size span").css("border","1px solid rgb(187, 172, 172)")
-    $(this).css("border","1px solid #010101")
+    $(".size span").css("border", "1px solid rgb(187, 172, 172)")
+    $(this).css("border", "1px solid #010101")
 })
 // 立即购买
 $(".buy").click(function () {

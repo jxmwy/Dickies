@@ -110,27 +110,22 @@ $(function () {
         }
     });
     // 点击button提交
-    $(".main .reg").click(function () {
-        console.log(1);
-        let username = $(".phoneNum").val();
-        let userpass = $(".password").val();
-        // console.log(username, userpass)
-        $.post("./php/addUser.php", "username=" + username, "userpass=" + userpass, function (data) {
-            console.log(data)
+    document.querySelector(".reg").onclick = function () {
+        console.log(this)
+        let name = $(".phoneNum").val()
+        let pass = $(".password").val()
+        console.log(name, pass)
+        $.post("./php/addUser.php", "username=" + name, "userpass=" + pass, function (data) {
+            if (data === "success") {
+                alert("注册成功");
+            }
+            if (data === "fail") {
+                alert("注册失败");
+            }
         })
-        // if (!$(".check").prop("checked")) {
-        //     alert("请点击确认用户协议");
-        //     return;
-        // }
-        // if (judge === true) {
-        //     let username = $(".phoneNum").val();
-        //     let userpass = $(".password").val();
-        //     $.post("./php/addUser.php", "username=" + username, "userpass=" + userpass, function (data) {
-        //         console.log(data)
-        //     })
-
-        // } else {
-        //     alert("请完善注册信息");
-        // }
-    });
+    }
 });
+
+
+
+

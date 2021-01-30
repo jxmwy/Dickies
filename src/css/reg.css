@@ -65,7 +65,13 @@
   border: none;
   height: 42px;
 }
-.reg {
+.main .reg {
+  /* margin-top: 20px;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
+  padding-top: 0;
+  height: 42px; */
   width: 100%;
   background-color: rgb(163, 12, 12);
 }

@@ -17,16 +17,16 @@ $(function () {
 })
 
 // 连接后端
- $(function () {
+$(function () {
     $.get("./php/getGoodsList.php", function (data) {
         // console.log(data) 
         let arr = JSON.parse(data);
-       
+        sessionStorage.setItem("detail", "1")
         arr.forEach(item => {
-            // console.log(item)
+            console.log(item)
             let content = $(
-            `
-            
+                `
+
             <div class="content">
                 <div class="bigPic">
                     <img src="${item.goodsImg}" alt="">
@@ -46,17 +46,17 @@ $(function () {
                     <li><img src="${item.beiyong3}" alt=""></li>
                 </ul>
             </div>
-        
+
              `
             );
             content.appendTo($(".right"))
-            // 页面跳转
-            $(".content").click(function () {
-                location.href = `http://127.0.0.1/Dickies/src/gooddetail.html?id=${item.goodsId}`
-            })
-        
+
         });
-         // 商品划上
+        // 页面跳转
+        $(".content").click(function () {
+            location.href = `http://127.0.0.1/Dickies/src/gooddetail.html?id=${$(this).find("i").html()}`
+        })
+        // 商品划上
         $(".content").mouseenter(function () {
             $(this).find(".smallPic").show()
             $(this).find(".bigPic").find("span").show()
@@ -64,19 +64,19 @@ $(function () {
         $(".content").mouseleave(function () {
             $(this).find(".smallPic").hide()
             $(this).find(".bigPic").find("span").hide()
-            $(this).find(".bigPic").find("img").attr("src",this.src) 
+            $(this).find(".bigPic").find("img").attr("src", this.src)
         })
         $(".smallPic li img").mouseenter(function () {
             // console.log($(this).closest(".content").find(".bigPic").find("img")[0])
-            $(this).closest(".content").find(".bigPic").find("img").attr("src",this.src) 
+            $(this).closest(".content").find(".bigPic").find("img").attr("src", this.src)
         })
         let imgList = $(".smallPic li img")
-        
-        for (let i = 0; i < imgList.length; i++){
-            if (imgList[i].getAttribute("src")==="") {
-                imgList[i].id="fade"
+
+        for (let i = 0; i < imgList.length; i++) {
+            if (imgList[i].getAttribute("src") === "") {
+                imgList[i].id = "fade"
             }
         }
     });
-   
- });
+
+});

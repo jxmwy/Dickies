@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="css/lastnav.css">
     <link rel="stylesheet" href="css/detail.css">
+    <script>
+        let detail = sessionStorage.getItem("detail")
+        if (!detail) {
+            location.href = "http://127.0.0.1/Dickies/src/goodlist.html"
+        }
+    </script>
 </head>
 
 <body>
