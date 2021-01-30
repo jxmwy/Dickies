@@ -11,10 +11,10 @@
 	   //2)、执行SQL语句（查询）
 	   $sqlStr="select * from vip where username='$username' and userPass='$userPass'";
 	   
-	   $result=mysql_query($sqlStr,$con);
+	   $result=mysql_query($sqlStr,$conn);
 	   
 	   //3)、关闭连接
-	   mysql_close($con);
+	   mysql_close($conn);
 	//3、响应结果
 	//获得$result的行数
 	$rows = mysql_num_rows($result);

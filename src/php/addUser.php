@@ -10,14 +10,14 @@
 	include("./conndb.php");
 	
 	//2、执行SQL语句
-	$sqlStr = "insert into vip(username,userPass)
+	$sqlStr = "insert into vip(username,userpass)
               values('$username','$userpass')";
 	//echo $sqlStr;
 	
-	$result = mysql_query($sqlStr,$con);
+	$result = mysql_query($sqlStr,$conn);
 	
 	//3、关闭数据库
-	mysql_close($con);
+	mysql_close($conn);
 	
 	//三、给前端响应
     if($result==1){

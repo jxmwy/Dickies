@@ -2,11 +2,11 @@
 let reg = location.href;
 let id = reg.split("=")[1]
 // console.log(id)
-//后端接口
+//获取点击后获得的商品后端接口
 $.get("./php/getGoodsInfo.php", "goodsId=" + id, function (data) {
 
     let arr = JSON.parse(data);
-    console.log(arr)
+    // console.log(arr)
     let content = $(
         `
         <div class="big">
@@ -105,13 +105,6 @@ $.get("./php/getGoodsInfo.php", "goodsId=" + id, function (data) {
     })
 });
 
-
-
-
-
-
-
-
 // 商品数量加减
 $(".jia").click(function () {
     $(".number i").html(Number($(".number i").html()) + 1)
@@ -131,3 +124,18 @@ $(".size span").click(function () {
 $(".buy").click(function () {
     location.href = "http://127.0.0.1/Dickies/src/checkout.html"
 })
+// 加入购物车功能接口
+$(".add").click(function () {
+    // console.log(1)
+    let name = sessionStorage.getItem("username")
+    let id = $(".goodid").html()
+    let count = $(".number i").html()
+    // console.log(name, id, count)
+    $.post("./php/addShoppingCart.php", "vipName=" + name + "&" + "goodsId= " + id + "&" + "goodsCount=" + count, function (data) {
+        console.log(data)
+    })
+    // $.post("./php/updateGoodsCount.php", "vipName=" + name + "&" + "goodsId= " + id + "&" + "goodsCount=" + count, function (data) {
+    //     console.log(data)
+    // })
+})
+

@@ -1,3 +1,8 @@
+let username = sessionStorage.getItem("username")
+$.get("./php/getShoppingCart.php", "vipName=" + username, function (data) {
+    console.log(data)
+})
+
 // 计算总金额函数
 function totalPrice() {
     let checklist = $(".one .check")

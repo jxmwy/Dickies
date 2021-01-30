@@ -19,11 +19,11 @@ $(function () {
 // 连接后端
 $(function () {
     $.get("./php/getGoodsList.php", function (data) {
-        // console.log(data) 
+        console.log(data)
         let arr = JSON.parse(data);
         sessionStorage.setItem("detail", "1")
         arr.forEach(item => {
-            console.log(item)
+            // console.log(item)
             let content = $(
                 `
 

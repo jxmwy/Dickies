@@ -29,3 +29,24 @@ $(".random").click(function () {
 $(".notsee").click(function () {
     $(".random").html(verifyCode(4))
 })
+
+// 登录接口
+
+$("#option1 .login").click(function () {
+
+    let name = $(".writeCode").val()
+    let pass = $(".password").val()
+    console.log(name, pass)
+    $.post("./php/login.php", "username=" + name + "&" + "userpass= " + pass, function (item) {
+        // console.log(item)
+
+        if (item === "success") {
+            alert("登录成功");
+            sessionStorage.setItem("username", name)
+            location.href = `http://127.0.0.1/Dickies/src/homepage.html`
+        }
+        if (item === "fail") {
+            alert("该用户或密码错误");
+        }
+    })
+})
