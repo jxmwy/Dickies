@@ -6,7 +6,7 @@
 	include("./conndb.php");
 	
 	$sqlstr = "select *
-				from goodsInfo g,shoppingCart s,goodstype as gt
+				from goodsInfo g,shoppingCart s,goodstype gt
 			   where g.goodsId = s.goodsId
 			     and gt.typeId = g.typeId   
 			     and s.vipName = '$vipName'";

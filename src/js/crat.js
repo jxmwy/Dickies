@@ -1,4 +1,5 @@
 let username = sessionStorage.getItem("username")
+console.log(username)
 $.get("./php/getShoppingCart.php", "vipName=" + username, function (data) {
     console.log(data)
 })
